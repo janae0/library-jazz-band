@@ -144,10 +144,20 @@ const personnel2026Nov = [
   },
 ];
 
+// Nancy's title wording, as a separate update so it also applies where
+// 2026-11-personnel has already run.
+const maronTitle = [
+  {
+    match: { ids: ["nancy-maron"], names: ["Nancy Maron"] },
+    set: { role: "Co-Founder and Artistic Director" },
+  },
+];
+
 export const MUSICIAN_UPDATES = [
   { id: "2026-11-roster", changes: roster2026Nov },
   { id: "2026-10-levitt-trombone", changes: levittTrombone },
   { id: "2026-11-personnel", changes: personnel2026Nov },
+  { id: "2026-11-maron-title", changes: maronTitle },
 ];
 
 const norm = (s) => (s || "").trim().toLowerCase();
