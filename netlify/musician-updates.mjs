@@ -128,7 +128,7 @@ const personnel2026Nov = [
   },
   {
     match: { ids: ["nancy-maron"], names: ["Nancy Maron"] },
-    set: { role: "Co-Founder, Artistic Director" },
+    set: { role: "Co-Founder and Artistic Director" },
   },
   {
     match: { ids: ["musician-1762925026566"], names: ["Dave Levitt"] },
