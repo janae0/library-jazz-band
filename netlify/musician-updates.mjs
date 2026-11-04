@@ -112,6 +112,14 @@ const roster2026Nov = [
   },
 ];
 
+// Dave Levitt is listed as trombone only (he stays co-founder).
+const levittTrombone = [
+  {
+    match: { ids: ["musician-1762925026566"], names: ["Dave Levitt"] },
+    set: { instrument: "Trombone" },
+  },
+];
+
 // Personnel edits from the band, Nov 2026.
 const personnel2026Nov = [
   {
@@ -138,6 +146,7 @@ const personnel2026Nov = [
 
 export const MUSICIAN_UPDATES = [
   { id: "2026-11-roster", changes: roster2026Nov },
+  { id: "2026-10-levitt-trombone", changes: levittTrombone },
   { id: "2026-11-personnel", changes: personnel2026Nov },
 ];
 
