@@ -112,8 +112,42 @@ const roster2026Nov = [
   },
 ];
 
+// Dave Levitt is listed as trombone only (he stays co-founder).
+const levittTrombone = [
+  {
+    match: { ids: ["musician-1762925026566"], names: ["Dave Levitt"] },
+    set: { instrument: "Trombone" },
+  },
+];
+
+// Personnel edits from the band, Nov 2026.
+const personnel2026Nov = [
+  {
+    match: { ids: ["bill-reeve"], names: ["Bill Reeve"] },
+    set: { role: "Musical Director" },
+  },
+  {
+    match: { ids: ["nancy-maron"], names: ["Nancy Maron"] },
+    set: { role: "Co-Founder, Artistic Director" },
+  },
+  {
+    match: { ids: ["musician-1762925026566"], names: ["Dave Levitt"] },
+    set: { role: "Co-Founder" },
+  },
+  {
+    // Hasn't played with the band for a while: listed at the end of the page.
+    match: { ids: ["musician-1762923305677"], names: ["Chris Ferdinand"] },
+    set: {
+      listLast: true,
+      bio: "Chris Ferdinand joins us all the way from Brooklyn: Aspiring pilot, playing saxophone for fifteen-ish years and subsisting on caffeine.",
+    },
+  },
+];
+
 export const MUSICIAN_UPDATES = [
   { id: "2026-11-roster", changes: roster2026Nov },
+  { id: "2026-10-levitt-trombone", changes: levittTrombone },
+  { id: "2026-11-personnel", changes: personnel2026Nov },
 ];
 
 const norm = (s) => (s || "").trim().toLowerCase();
