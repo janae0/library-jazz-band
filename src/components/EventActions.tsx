@@ -12,7 +12,7 @@ export const AdmissionTag = ({
 }) => (
   <span
     className={cn(
-      "inline-flex items-center whitespace-nowrap rounded-full bg-ljb-gold/10 px-3 py-1 font-roboto text-xs font-normal text-ljb-gold-light",
+      "inline-flex min-w-0 max-w-full items-center break-words rounded-full leading-snug bg-ljb-gold/10 px-3 py-1 font-roboto text-xs font-normal text-ljb-gold-light",
       className,
     )}
   >
